@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Dogadjaji u Beogradu</title>
+    <link rel="stylesheet" href="css/index.css">
+    <meta name="author" content="Slaven Pavlekic">
+    <script>
+    var i
+      function FunctionDodatno(i){
+        if (i==1){
+        document.getElementById("Dodatno1").innerHTML = "Cena: 500din";
+        document.getElementById("Dodatno2").innerHTML = "Ulaznice se kupuju iskljucivo na ulazu u klub na da koncerta.";
+      }
+      else if (i==2) {
+        document.getElementById("Dodatno3").innerHTML = "Prodajna izlozba";
+        document.getElementById("Dodatno4").innerHTML = "Izlozba povodom dvadesetogodisnjice od smrti multimedijalnog umetnika Dusana Gerzica Gede.";
+      }
+      else if (i==3) {
+        document.getElementById("Dodatno5").innerHTML = "Ulaz slobodan";
+        document.getElementById("Dodatno6").innerHTML = "Postavka je izlozena u centralnom holu Doma Narodne skupstine.";
+      }
+      else if (i==4) {
+        document.getElementById("Dodatno7").innerHTML = "Cena ulaznice: 15.000din";
+        document.getElementById("Dodatno8").innerHTML = "Sinonim za mesto odrzavanja je sofisticirani luksuz.";
+      }
+      }
+    </script>
+  </head>
+  <body>
+    <div id="wrapper">
+      <header>
+      <div class="logobb">
+        <img class="logo" src="Slike/BelgradeBeatLogo.png" alt="BELGRADE BEAT LOGO">
+        <span>BELGRADE BEAT</span>
+      </div>
+      <div class="logofb">
+        <a href="https://www.facebook.com/groups/119651274850358/?fb_dtsg_ag=AdzpfLuNVnahiZS0eLE8C3G-iTMZxSrmjHkIXIrYlpoWfA%3AAdyFhgTZzH-7Klotg2vCkiRGDf4vdN0pDyHEAFyLABWhyw">
+          <img class="logo" src="Slike/FacebookLogo.png" alt="FACEBOOK LOGO" style="padding-left: 900px;">
+        </a>
+      </div>
+      </header>
+      <h1>Danas</h1>
+      <div class="Dogadjaj">
+        <h2 id="1"><a href="https://belgrade-beat.rs/desavanja/proto-idiot">Proto idiot</a></h2>
+        <p>Alternativni bend iz Mancestera</p>
+        <p><b>Vreme:</b> 22:00</p>
+        <p><b>Mesto:</b> KC Grad</p>
+        <p>Koncert</p>
+        <button type="button" onclick="FunctionDodatno(1)">Dodatno</button>
+        <p id="Dodatno1"></p>
+        <p id="Dodatno2"></p>
+      </div>
+      <div class="Dogadjaj">
+        <h2 id="2"><a href="https://belgrade-beat.rs/desavanja/od-grada-do-grada">Od grada do grada</a></h2>
+        <p>Prodajna izlozba</p>
+        <p><b>Vreme:</b> </p>
+        <p><b>Mesto:</b> KC Grad</p>
+        <p>Umetnost i kultura</p>
+        <button type="button" onclick="FunctionDodatno(2)">Dodatno</button>
+        <p id="Dodatno3"></p>
+        <p id="Dodatno4"></p>
+      </div>
+      <div class="Dogadjaj">
+        <h2 id="3"><a href="https://belgrade-beat.rs/desavanja/dijego-i-frida-osmeh-na-pola-puta">Dijego i Frida osmeh na pola puta</a></h2>
+        <p>Izlozba fotografija o zivotu Dijega Rivere i Fride Kalo</p>
+        <p><b>Vreme:</b></p>
+        <p><b>Mesto:</b> Narodna skupsina</p>
+        <p>Umetnost i kultura</p>
+        <button type="button" onclick="FunctionDodatno(3)">Dodatno</button>
+        <p id="Dodatno5"></p>
+        <p id="Dodatno6"></p>
+      </div>
+      <div class="Dogadjaj">
+        <h2 id="4"><a href="https://belgrade-beat.rs/desavanja/digital-2018">Digital 2018</a></h2>
+        <p>Najveca regionalna konferencija iz oblasti telekomunikacije i medija</p>
+        <p><b>Vreme:</b></p>
+        <p><b>Mesto:</b> Metropol Palace</p>
+        <p>Obrazovni</p>
+        <button type="button" onclick="FunctionDodatno(4)">Dodatno</button>
+        <p id="Dodatno7"></p>
+        <p id="Dodatno8"></p>
+      </div>
+      <footer><p>Sajt je radjen po izgledu sajta <a href="https://belgrade-beat.rs/desavanja/danas">Belgrade Beat</a>.</p></footer>
+    </div>
+  </body>
+</html>
